@@ -19,8 +19,8 @@ class App extends React.Component{
   componentDidMount(){
     let f = async () =>{
 
-      let responseGenre = await fetch("http://localhost:4000/genre");
-      let responseMovies = await fetch("http://localhost:4000/movies");
+      let responseGenre = await fetch("https://moviesapp2-api.vercel.app/genre");
+      let responseMovies = await fetch("https://moviesapp2-api.vercel.app/movies");
 
       let moviesJson = await responseMovies.json();
       let genreJson= await responseGenre.json();
