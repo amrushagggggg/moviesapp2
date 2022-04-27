@@ -33,6 +33,7 @@ server.get("/genre", function (req, res) {
 
 //ye line server ko shuru krdeti hai
 // ek port pr
+const port = process.env.PORT || 4000;
 server.listen(4000);
 
 // //  http://localhost:3000/movies
